@@ -10,7 +10,7 @@ text = "Привет, как твои дела?"
 counter = Counter(text)
 
 # Красивый вывод анализа
-print(counter.show_analyze()) -->
+print(counter.pretty_analyze()) -->
 
 Количество букв в тексте: 17
 Количество цифр в тексте: 0
