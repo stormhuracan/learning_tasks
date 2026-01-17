@@ -2,11 +2,9 @@ from book_class import Book, DatabaseBookManager
 
 
 class LibraryStatistics:
-    def __init__(self, library='library.json'):
+    def __init__(self, library="library.json"):
         books = DatabaseBookManager.load_books(library)
         self.library = [Book.from_dict(**book) for book in books]
-
-
 
     def books_by_condition(self, condition: str) -> dict[str | int, int]:
         result = {}
@@ -16,7 +14,6 @@ class LibraryStatistics:
                 continue
             result[value] = result.get(value, 0) + 1
         return result
-
 
     def taken_books_by_condition(self, condition: str) -> dict[str | int, int]:
         """
@@ -33,11 +30,12 @@ class LibraryStatistics:
             result[value] = result.get(value, 0) + 1
         return result
 
-
     def get_statistics(self):
-        return (f'Кол-во книг по жанрам: {self.books_by_condition('genre')}\n'
-                f'Кол-во книг по годам: {self.books_by_condition('year')}\n'
-                f'Книги, которые взяты читателями по жанру: {self.taken_books_by_condition('genre')}\n')
+        return (
+            f"Кол-во книг по жанрам: {self.books_by_condition('genre')}\n"
+            f"Кол-во книг по годам: {self.books_by_condition('year')}\n"
+            f"Книги, которые взяты читателями по жанру: {self.taken_books_by_condition('genre')}\n"
+        )
 
 
 x = LibraryStatistics()
