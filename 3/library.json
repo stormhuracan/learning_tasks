@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Над пропастью во ржи",
+        "isbn": "ISBN-001",
+        "author": "Дж. Сэлинджер",
+        "genre": "fiction",
+        "year": 1951,
+        "status": "available",
+        "owner": null
+    },
+    {
+        "id": 2,
+        "title": "1984",
+        "isbn": "ISBN-002",
+        "author": "Дж. Оруэлл",
+        "genre": "fiction",
+        "year": 1949,
+        "status": "issued",
+        "owner": {
+            "name": "Вася",
+            "phone": "+79990000001"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Мастер и Маргарита",
+        "isbn": "ISBN-003",
+        "author": "М. Булгаков",
+        "genre": "fiction",
+        "year": 1967,
+        "status": "available",
+        "owner": null
+    },
+    {
+        "id": 4,
+        "title": "Clean Code",
+        "isbn": "ISBN-004",
+        "author": "R. Martin",
+        "genre": "programming",
+        "year": 2008,
+        "status": "available",
+        "owner": null
+    },
+    {
+        "id": 5,
+        "title": "Python Tricks",
+        "isbn": "ISBN-005",
+        "author": "D. Bader",
+        "genre": "programming",
+        "year": 2017,
+        "status": "available",
+        "owner": null
+    },
+    {
+        "id": 6,
+        "title": "Анна Каренина",
+        "isbn": "ISBN-006",
+        "author": "Л. Толстой",
+        "genre": "fiction",
+        "year": 1877,
+        "status": "issued",
+        "owner": {
+            "name": "Лёша",
+            "phone": "+79990000002"
+        }
+    }
+]
